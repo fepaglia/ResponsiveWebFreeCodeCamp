@@ -1,0 +1,48 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.2), rgba(255, 255, 0, 1.5)), url(https://img.freepik.com/free-vector/hand-drawn-web-developers-working_23-2148819605.jpg?w=740&t=st=1654362903~exp=1654363503~hmac=5e8be7538869fd9d35d8adbd79cc19df14dd0def2ee7ce4a6cd66846c361bf2d);
+    display:block;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    font-family: Tahoma;
+      font-size: 16px;
+  }
+  
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+form {
+  width: 60vw;
+  max-width: 500px;
+      min-width: 300px;
+      margin: 0 auto;
+      padding-bottom: 2em;
+    }
+  
+fieldset {
+      background-color: #0f0f;
+      border: 1px solid;
+      padding: 2rem 2p;
+  }
+  
+label {
+    display: block;
+      margin: 0.5rem 0;
+  }
+  
+input,
+textarea,
+select {
+    margin: 10px 0 0 0;
+      width: 100%;
+    min-height: 2em;
+  }
+  
+input, textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+  }

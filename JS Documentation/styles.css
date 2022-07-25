@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* bakcgrounds */
+  body {
+    background-color: aliceblue;
+  }
+  
+  #navbar {
+    background-color: grey;
+  }
+
+  code {
+    padding: 1em;
+    margin: 0.5em;
+    background-color: grey;
+    border-radius: 6px;
+  }
+  
+/* Layout */
+
+body {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+    #navbar {
+        position: fixed;
+        height: 100%;
+        width: auto;
+        text-align: center;
+        border-right: 1px solid black ;
+    }
+    #navbar ul {
+        height: 88%;
+        padding: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+        #navbar li {
+            border-bottom: 1px solid black;
+            padding: 5px 20px;
+        }
+
+    #main-doc {
+        padding: 1em;
+        position: absolute;
+        margin-left: 310px ;
+    }
+        header {
+            margin: 10px;
+            font-size: 1.8em;
+            border-bottom: 1px solid black;
+        }
+
+        p {
+            margin: 1em;
+            display: block;
+        }
+        section {
+            display: block;
+        }
+        section ul {
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
+        section li {
+            margin: 15px 0px 0px 20px;
+        }
+        code {
+            display: block;
+            text-align: left;
+            justify-content: center;
+            white-space: pre-line;
+            position: relative;
+            word-break: normal;
+            word-wrap: normal;
+            line-height: 2;
+            background-color: #f7f7f7;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        
+
+@media (max-width: 600px){
+    /* Layout */
+    body {
+        flex-flow: column nowrap;
+    }
+        #navbar {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1em;
+            border-bottom: 3px solid black;
+
+        }
+            #navbar > ul {
+
+                display: flex;
+                flex-flow: row nowrap;
+                overflow-x: scroll;
+
+            }
+                #navbar li {
+                    list-style: none;
+                    border: 1px solid black ;
+                    
+                }
+                    .nav-link {
+                        text-decoration: none;
+                        place-content: center;
+                    }
+                
+        #main-doc {
+            position:static;
+            margin-left: 10px;
+            margin-top: 170px;
+        }
+
+            code {
+                position: static;
+            }
+
+
+}
